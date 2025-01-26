@@ -11,7 +11,6 @@ tools {
 // discard builds when they reach a certain age; for example, one days old; quietPeriod option allows specifying a quiet period for this project; Retry the block (up to N times) if any exception happens during its body execution
 options {
   buildDiscarder logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '1', numToKeepStr: '5')
-  quietPeriod 20
   retry(3)
 }
 
