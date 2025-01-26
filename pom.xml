@@ -17,8 +17,6 @@
   </dependencies>
   <build>
     <finalName>my-webapp</finalName>
-  </build>
-  <build>
     <plugins>
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
