@@ -1,4 +1,4 @@
-pipeline
+pipeline {
    agent any // Ensure 'any' is correctly spelled and placed inside the 'agent' block
 
 // Need to set up the path for the required in manage jenkins>Tools 
@@ -35,4 +35,5 @@ stages {
       sh 'mvn clean package'
     }
   }
+}
 }
