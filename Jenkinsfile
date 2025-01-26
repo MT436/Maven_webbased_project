@@ -16,11 +16,20 @@ options {
 }
 
 stages {
-  stage("Deletes the workspace once build is done"){
+  stage('Clean'){  //Deletes the workspace once build is done
     steps {
      cleanWs() 
     }
   }
+  
+  stage('Checkout') {  //git checkout
+    steps {
+      checkout scmGit(branches: [[name: '*/Pipeline']], 
+                      extensions: [], 
+                      userRemoteConfigs: [[url: 'https://github.com/MT436/Maven_webbased_project.git']])
+    }
+  }
+  
   stage('Build') {
     steps {
     // One or more steps need to be included within the steps block.
