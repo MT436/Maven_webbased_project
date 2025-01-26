@@ -25,7 +25,7 @@ stages {
   stage('Build') {
     steps {
     // One or more steps need to be included within the steps block.
-      bat 'mvn clean package'
+      sh 'mvn clean package'
     }
   }
 }
