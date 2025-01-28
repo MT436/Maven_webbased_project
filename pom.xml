@@ -19,6 +19,9 @@
       <groupId>org.sonarsource.scanner.maven</groupId>
       <artifactId>sonar-maven-plugin</artifactId>
       <version>4.0.0.4121</version>
+      <properties>
+        <sonar.host.url>http://localhost:9001</sonar.host.url>
+      </properties>
     </dependency>
   </dependencies>
   <build>
@@ -32,5 +35,6 @@
       
     </plugins>
 </build>
+  
 </project>
 
