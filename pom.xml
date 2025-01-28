@@ -20,6 +20,13 @@
       <artifactId>sonar-maven-plugin</artifactId>
       <version>5.0.0.4389</version>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/org.codehaus.sonar/sonar-plugin-api -->
+    <dependency>
+      <groupId>org.codehaus.sonar</groupId>
+      <artifactId>sonar-plugin-api</artifactId>
+      <version>5.1-RC2</version>
+      <scope>provided</scope>
+    </dependency>
   </dependencies>
   <build>
     <finalName>my-webapp</finalName>
